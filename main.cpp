@@ -12,10 +12,10 @@ int main ()
     int p_2[8] = {1, 0xC};
     int p_res[8] = {};
 
-    //mult_polynomials (p_1, p_2, 4, p_res);
-    mult_nums (10, p_1, p_2, 8, p_res);
-    //print_poly_mult_res (p_res, 4);
-    print_nums_mult_res (10, p_res, 8);
+    mult_polynomials (p_1, p_2, 4, p_res);
+    //mult_nums (10, p_1, p_2, 8, p_res);
+    print_poly_mult_res (p_res, 4);
+    //print_nums_mult_res (10, p_res, 8);
 
     return 0;
 }
