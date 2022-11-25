@@ -28,7 +28,7 @@ void mult_polynomials (int *poly_1, int *poly_2, int k, int *poly_res)
         poly_complex_res[i] = poly_complex_res [i]/k;
         poly_res[i] = round (creal (poly_complex_res[i]));
 
-        printf ("res[i] = %d\n", poly_res[i]);
+       // printf ("res[i] = %d\n", poly_res[i]);
     }
 
     free (poly_complex_values);
@@ -50,8 +50,4 @@ void mult_nums (int base, int *num_1, int *num_2, int k, int *res)
         res[i + 1] = res[i];
     }
     res[0] = carry;
-    for (int i = 0; i < k; i++)
-    {
-        printf ("[i] ==== %d", res[i]);
-    }
 }

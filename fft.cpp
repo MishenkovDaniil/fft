@@ -41,7 +41,7 @@ int fft (int *p, int k, double complex *result)
         result[i] = result_0[a] + cpow (w, i) * result_1[a];
         //result[i] = round (creal (result[i])) + round(cimag (result[i]))*I;
 
-        print_complex ("result [ii] = ", result [i]);
+        //print_complex ("result [ii] = ", result [i]);
     }
 
     free (result_0);
